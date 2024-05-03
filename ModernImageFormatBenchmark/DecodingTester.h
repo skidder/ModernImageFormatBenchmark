@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)testDecodingName:(NSString *)name;
 
++ (void)testWebPDecodingForName:(NSString *)name iterations:(int)iterations;
+
 @end
 
 NS_ASSUME_NONNULL_END

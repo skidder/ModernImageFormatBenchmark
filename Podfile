@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-platform :ios, '11.0'
+platform :ios, '14.0'
 
 inhibit_all_warnings!
 install! 'cocoapods', :generate_multiple_pod_projects => true
@@ -11,5 +11,6 @@ target 'ModernImageFormatBenchmark' do
     pod 'SDWebImageBPGCoder', :subspecs => ['libbpg', 'bpgenc']
     pod 'SDWebImageFLIFCoder'
     pod 'SDWebImageAVIFCoder'
+    pod 'librav1e', '~> 0.7.0'
     pod 'libavif', :subspecs => ['libdav1d', 'librav1e']
 end

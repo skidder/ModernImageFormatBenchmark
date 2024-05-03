@@ -23,7 +23,7 @@
     NSData *bundleData = [NSData dataWithContentsOfFile:bundlePath];
     UIImage *image = [UIImage imageWithData:bundleData];
     
-    [DecodingTester testDecodingName:@"lena-512x512"];
+    [DecodingTester testWebPDecodingForName:@"lena-512x512" iterations:1000];
     [EncodingTester testEncodingName:@"lena-512x512"];
 }
 
